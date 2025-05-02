@@ -44,5 +44,8 @@ function getHumanChoice(){
     }
 } 
 
+let humanScore = 0;
+let computerScore = 0;
+
 console.log(getComputerChoice(3))
 console.log(getHumanChoice())
