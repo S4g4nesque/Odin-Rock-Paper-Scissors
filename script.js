@@ -4,15 +4,15 @@ console.log(greeting)
 
 function getComputerChoice(max){
 
-    let computerAnswer = Math.floor(Math.random() * max);
-    if (computerAnswer === 0){
+    let computerChoice = Math.floor(Math.random() * max);
+    if (computerChoice === 0){
         
         return "Rock"
     }
-    else if (computerAnswer === 1){
+    else if (computerChoice === 1){
         return "Paper"
     }
-    else if (computerAnswer === 2){
+    else if (computerChoice === 2){
         return "Scissors"
     }
     else {
