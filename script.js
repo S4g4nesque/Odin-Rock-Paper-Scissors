@@ -21,10 +21,28 @@ function getComputerChoice(max){
 
     }
 
+// function getHumanChoice(){
+//     let humanChoice = prompt("Rock, paper, or scissors?");
+//     return humanChoice
+// } 
+
 function getHumanChoice(){
-    let humanChoice = prompt("Rock, paper, or scissors?");
-    return humanChoice
-}    
+    let humanChoice = parseInt(prompt("Rock, paper, or scissors? 0=Rock, 1=Paper, 2=Scissors."));
+    switch (humanChoice){
+        case 0:
+            humanChoice = "Rock";
+            return humanChoice
+            // break;
+        case 1:
+            humanChoice = "Paper";
+            return humanChoice
+            // break;
+        case 2:
+            humanChoice = "Scissors";
+            return humanChoice
+            // break;
+    }
+} 
 
 console.log(getComputerChoice(3))
 console.log(getHumanChoice())
