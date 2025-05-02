@@ -47,9 +47,13 @@ function getHumanChoice(){
 let humanScore = 0;
 let computerScore = 0;
 
+// Game function
 function playRound(computerChoice, humanChoice){
-
+    
 }
+
+const humanThrow = getHumanChoice();
+const computerThrow = getComputerChoice();
 
 console.log(getComputerChoice(3))
 console.log(getHumanChoice())
