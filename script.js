@@ -53,7 +53,7 @@ function playRound(computerChoice, humanChoice){
         return "Draw! Computer also threw" + humanChoice + " Play again!"
     }
     // player loss conditions
-    else if ((humanChoice="Rock" && computerChoice="Paper") || (humanChoice="Paper" && computerChoice="Scissors") || (humanChoice="Scissors" && computerChoice="Rock")){
+    else if ((humanChoice==="Rock" && computerChoice==="Paper") || (humanChoice==="Paper" && computerChoice==="Scissors") || (humanChoice==="Scissors" && computerChoice==="Rock")){
         return "Unlucky, computer threw" + computerChoice + " , try again!"
     }
     
