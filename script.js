@@ -44,11 +44,18 @@ function getHumanChoice(){
 //     }
 // } 
 
-let humanScore = 0;
-let computerScore = 0;
+
 
 // Game function
 function playRound(computerChoice, humanChoice){
+    // Draw conditions
+    if (humanChoice === computerChoice){
+        return "Draw! Computer also threw" + humanChoice + " Play again!"
+    }
+    // player loss conditions
+    else if ((humanChoice="Rock" && computerChoice="Paper") || (humanChoice="Paper" && computerChoice="Scissors") || (humanChoice="Scissors" && computerChoice="Rock")){
+        return "Unlucky, computer threw" + computerChoice + " , try again!"
+    }
     
 }
 
