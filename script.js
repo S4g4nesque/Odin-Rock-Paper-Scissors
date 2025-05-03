@@ -55,7 +55,7 @@ function playRound(computerChoice, humanChoice){
     let computerScore = 0;
 
     // Draw conditions
-    if (humanChoice === computerChoice){
+    if ((humanChoice==="Rock" && computerChoice==="Rock") || (humanChoice==="Paper" && computerChoice==="Paper") || (humanChoice==="Scissors" && computerChoice==="Scissors")){
         return "Draw! Computer also threw " + humanChoice + ". Play again!"
         
     }
