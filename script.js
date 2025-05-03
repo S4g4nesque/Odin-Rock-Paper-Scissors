@@ -2,6 +2,8 @@ let greeting = "Hello World!";
 
 console.log(greeting)
 
+
+
 function getComputerChoice(max){
 
     let computerChoice = Math.floor(Math.random() * max);
@@ -54,7 +56,7 @@ function playRound(computerChoice, humanChoice){
 
     // Draw conditions
     if (humanChoice === computerChoice){
-        return "Draw! Computer also threw " + humanChoice + " Play again!"
+        return "Draw! Computer also threw " + humanChoice + ". Play again!"
         
     }
     // player loss conditions
@@ -67,11 +69,15 @@ function playRound(computerChoice, humanChoice){
             humanScore++ 
             return "You win! Computer threw " + computerChoice
         }
-    
-}
 
-const humanThrow = getHumanChoice();
-const computerThrow = getComputerChoice();
+ 
+    }    
+    
+
+
+// const humanThrow = getHumanChoice();
+// const computerThrow = getComputerChoice();
 
 console.log(getComputerChoice(3))
 console.log(getHumanChoice())
+console.log(playRound())
