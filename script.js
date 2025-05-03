@@ -48,16 +48,23 @@ function getHumanChoice(){
 
 // Game function
 function playRound(computerChoice, humanChoice){
+    
+    let humanScore = 0;
+    let computerScore = 0;
+
     // Draw conditions
     if (humanChoice === computerChoice){
         return "Draw! Computer also threw " + humanChoice + " Play again!"
+        
     }
     // player loss conditions
     else if ((humanChoice==="Rock" && computerChoice==="Paper") || (humanChoice==="Paper" && computerChoice==="Scissors") || (humanChoice==="Scissors" && computerChoice==="Rock")){
+        computerScore++
         return "Unlucky, computer threw " + computerChoice + " , try again!"
     }
     // player win conditions
-        else ((humanChoice==="Rock" && computerChoice==="Scissors") || (humanChoice==="Paper" && computerChoice==="Rock") || (humanChoice==="Scissors" && computerChoice==="Paper")){
+        else if ((humanChoice==="Rock" && computerChoice==="Scissors") || (humanChoice==="Paper" && computerChoice==="Rock") || (humanChoice==="Scissors" && computerChoice==="Paper")){
+            humanScore++ 
             return "You win! Computer threw " + computerChoice
         }
     
