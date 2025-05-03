@@ -78,6 +78,6 @@ function playRound(computerChoice, humanChoice){
 // const humanThrow = getHumanChoice();
 // const computerThrow = getComputerChoice();
 
-console.log(getComputerChoice(3))
 console.log(getHumanChoice())
+console.log(getComputerChoice(3))
 console.log(playRound())
