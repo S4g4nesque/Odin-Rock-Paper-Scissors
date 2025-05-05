@@ -56,20 +56,23 @@ function playRound(computerChoice, humanChoice){
     let humanScore = 0;
     let computerScore = 0;
 
+    computerChoice = computerChoice.toLowerCase();
+    humanChoice = humanChoice.toLowerCase();
+
     // Draw conditions
     if (humanChoice===computerChoice){
-        return "Draw! Computer also threw " + humanChoice + ". Play again!"
+        return "Draw! Computer also threw " + humanChoice + ". Play again!";
         
     }
     // player loss conditions
-    else if ((humanChoice==="Rock" && computerChoice==="Paper") || (humanChoice==="Paper" && computerChoice==="Scissors") || (humanChoice==="Scissors" && computerChoice==="Rock")){
+    else if ((humanChoice==="rock" && computerChoice==="paper") || (humanChoice==="paper" && computerChoice==="scissors") || (humanChoice==="scissors" && computerChoice==="rock")){
         computerScore++
-        return "Unlucky, computer threw " + computerChoice + " , try again!"
+        return "Unlucky, computer threw " + computerChoice + " , try again!";
     }
     // player win conditions
-        else if ((humanChoice==="Rock" && computerChoice==="Scissors") || (humanChoice==="Paper" && computerChoice==="Rock") || (humanChoice==="Scissors" && computerChoice==="Paper")){
+        else if ((humanChoice==="rock" && computerChoice==="scissors") || (humanChoice==="paper" && computerChoice==="rock") || (humanChoice==="scissors" && computerChoice==="paper")){
             humanScore++ 
-            return "You win! Computer threw " + computerChoice
+            return "You win! Computer threw " + computerChoice;
         }
 
  
@@ -82,4 +85,4 @@ function playRound(computerChoice, humanChoice){
 
 console.log(getHumanChoice())
 console.log(getComputerChoice(3))
-console.log(playRound())
+console.log(playRound(computerChoice, humanChoice))
