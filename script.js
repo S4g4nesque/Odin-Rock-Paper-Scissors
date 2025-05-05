@@ -86,6 +86,6 @@ function playRound(computerChoice, humanChoice){
 let humanChoice = getHumanChoice();
 let computerChoice = getComputerChoice(3);
 
-console.log(getHumanChoice())
-console.log(getComputerChoice(3))
+// console.log(getHumanChoice())
+// console.log(getComputerChoice(3))
 console.log(playRound(computerChoice, humanChoice))
