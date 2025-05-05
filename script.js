@@ -88,4 +88,5 @@ let computerChoice = getComputerChoice(3);
 
 // console.log(getHumanChoice())
 // console.log(getComputerChoice(3))
+
 console.log(playRound(computerChoice, humanChoice))
