@@ -8,14 +8,16 @@ function getComputerChoice(max){
 
     let computerChoice = Math.floor(Math.random() * max);
     if (computerChoice === 0){
-        
-        return "Rock"
+        computerChoice = "Rock";
+        return computerChoice
     }
     else if (computerChoice === 1){
-        return "Paper"
+        computerChoice = "Paper";
+        return computerChoice
     }
     else if (computerChoice === 2){
-        return "Scissors"
+        computerChoice = "Scissors";
+        return computerChoice
     }
     else {
         return "Error"
@@ -55,7 +57,7 @@ function playRound(computerChoice, humanChoice){
     let computerScore = 0;
 
     // Draw conditions
-    if ((humanChoice==="Rock" && computerChoice==="Rock") || (humanChoice==="Paper" && computerChoice==="Paper") || (humanChoice==="Scissors" && computerChoice==="Scissors")){
+    if (humanChoice===computerChoice){
         return "Draw! Computer also threw " + humanChoice + ". Play again!"
         
     }
