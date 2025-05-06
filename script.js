@@ -48,13 +48,13 @@ function getHumanChoice(){
 //     }
 // } 
 
-
+let humanScore = 0;
+let computerScore = 0;
 
 // Game function
 function playRound(computerChoice, humanChoice){
     
-    let humanScore = 0;
-    let computerScore = 0;
+   
 
     computerChoice = computerChoice.toLowerCase();
     humanChoice = humanChoice.toLowerCase();
@@ -78,7 +78,9 @@ function playRound(computerChoice, humanChoice){
  
     }    
     
-
+function showScores(){
+    return "human score: " + humanScore + ". computer score:" + computerScore;
+}
 
 // const humanThrow = getHumanChoice();
 // const computerThrow = getComputerChoice();
@@ -90,3 +92,4 @@ let computerChoice = getComputerChoice(3);
 // console.log(getComputerChoice(3))
 
 console.log(playRound(computerChoice, humanChoice))
+console.log(showScores())
