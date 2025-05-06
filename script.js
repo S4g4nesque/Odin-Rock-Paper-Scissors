@@ -81,9 +81,9 @@ function playRound(computerChoice, humanChoice){
  
     }    
 
-while ((humanScore || computerScore) < 3){
-    playRound(computerChoice, humanChoice);
-}    
+// // while ((humanScore || computerScore) < 3){
+// //     playRound(computerChoice, humanChoice);
+// }    
     
 function showScores(){
     return "human score: " + humanScore + ". computer score:" + computerScore;
