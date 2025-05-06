@@ -85,6 +85,7 @@ function playGame(){
 
     while ((humanScore || computerScore) < 3) {
         getHumanChoice();
+        getComputerChoice(3);
         playRound();
     }
 }
@@ -106,5 +107,6 @@ function showScores(){
 // console.log(getHumanChoice())
 // console.log(getComputerChoice(3))
 
-console.log(playRound(computerChoice, humanChoice))
+// console.log(playRound(computerChoice, humanChoice))
+console.log(playGame())
 console.log(showScores())
