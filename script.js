@@ -81,6 +81,15 @@ function playRound(computerChoice, humanChoice){
  
     }    
 
+function playGame(){
+
+    while ((humanScore || computerScore) < 3) {
+        getHumanChoice();
+        playRound();
+    }
+}
+
+
 // // while ((humanScore || computerScore) < 3){
 // //     playRound(computerChoice, humanChoice);
 // }    
