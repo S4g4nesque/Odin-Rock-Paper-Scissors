@@ -26,7 +26,6 @@ function getHumanChoice(){
 } 
 
 
-
 let humanScore = 0;
 let computerScore = 0;
 
@@ -34,16 +33,15 @@ let humanChoice = getHumanChoice();
 let computerChoice = getComputerChoice(3);
 
 // Game function
-while (humanScore < 3 && computerScore <3){
-    function playRound(computerChoice, humanChoice){
+
+function playRound(computerChoice, humanChoice){
     
     computerChoice = computerChoice.toLowerCase();
     humanChoice = humanChoice.toLowerCase();
 
     // Draw conditions
     if (humanChoice===computerChoice){
-        return "Draw! Computer also threw " + humanChoice + ". Play again!";
-        
+        return "Draw! Computer also threw " + humanChoice + ". Play again!";    
     }
     // player loss conditions
     else if ((humanChoice==="rock" && computerChoice==="paper") || (humanChoice==="paper" && computerChoice==="scissors") || (humanChoice==="scissors" && computerChoice==="rock")){
@@ -56,15 +54,6 @@ while (humanScore < 3 && computerScore <3){
             return "You win! Computer threw " + computerChoice;
         }
     }    
-}
-
-
-    if (humanScore === 3){
-        return "You win best out of 5!"
-    }
-    else if (computerScore === 3) {
-        return "Too bad, computer wins best out of 5!"
-    }
 
 
 function showScores(){
