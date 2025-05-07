@@ -1,5 +1,5 @@
 
-    function getComputerChoice(max){
+function getComputerChoice(max){
 
     let computerChoice = Math.floor(Math.random() * max);
     if (computerChoice === 0){
