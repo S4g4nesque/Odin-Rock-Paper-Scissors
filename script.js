@@ -4,7 +4,8 @@ console.log(greeting)
 
 
 
-function getComputerChoice(max){
+function playGame(){
+    function getComputerChoice(max){
 
     let computerChoice = Math.floor(Math.random() * max);
     if (computerChoice === 0){
@@ -55,7 +56,8 @@ let humanChoice = getHumanChoice();
 let computerChoice = getComputerChoice(3);
 
 // Game function
-function playRound(computerChoice, humanChoice){
+while (humanScore < 3 && computerScore <3){
+    function playRound(computerChoice, humanChoice){
     
     computerChoice = computerChoice.toLowerCase();
     humanChoice = humanChoice.toLowerCase();
@@ -75,15 +77,9 @@ function playRound(computerChoice, humanChoice){
             humanScore++ 
             return "You win! Computer threw " + computerChoice;
         }
-
- 
     }    
+}
 
-    while (humanScore < 3 && computerScore <3) {
-        humanChoice;
-        computerChoice;
-        playRound
-    }
 
     if (humanScore === 3){
         return "You win best out of 5!"
@@ -91,7 +87,7 @@ function playRound(computerChoice, humanChoice){
     else if (computerScore === 3) {
         return "Too bad, computer wins best out of 5!"
     }
-
+}
 
 // // while ((humanScore || computerScore) < 3){
 // //     playRound(computerChoice, humanChoice);
