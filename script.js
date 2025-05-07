@@ -57,8 +57,6 @@ let computerChoice = getComputerChoice(3);
 // Game function
 function playRound(computerChoice, humanChoice){
     
-   
-
     computerChoice = computerChoice.toLowerCase();
     humanChoice = humanChoice.toLowerCase();
 
