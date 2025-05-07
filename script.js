@@ -60,6 +60,13 @@ function playRound(computerChoice, humanChoice){
 function playGame(){
     let humanScore = 0;
     let computerScore = 0;
+
+    
+
+    if (playRound() = "Draw! Computer also threw " + humanChoice + ". Play again!" ||
+        playRound() = "Unlucky, computer threw " + computerChoice + " , try again!"||
+        playRound() = "You win! Computer threw " + computerChoice)
+        return getComputerChoice(), getHumanChoice(), playRound(computerChoice, humanChoice)
 }    
 
 function showScores(){
