@@ -85,6 +85,12 @@ function playRound(computerChoice, humanChoice){
         playRound
     }
 
+    if (humanScore === 3){
+        return "You win best out of 5!"
+    }
+    else if (computerScore === 3) {
+        return "Too bad, computer wins best out of 5!"
+    }
 
 
 // // while ((humanScore || computerScore) < 3){
