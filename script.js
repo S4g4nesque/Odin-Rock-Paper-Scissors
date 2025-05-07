@@ -1,9 +1,3 @@
-let greeting = "Hello World!";
-
-console.log(greeting)
-
-
-
 function playGame(){
     function getComputerChoice(max){
 
@@ -31,23 +25,7 @@ function getHumanChoice(){
     return humanChoice
 } 
 
-// function getHumanChoice(){
-//     let humanChoice = parseInt(prompt("Rock, paper, or scissors? 0=Rock, 1=Paper, 2=Scissors."));
-//     switch (humanChoice){
-//         case 0:
-//             humanChoice = "Rock";
-//             return humanChoice
-//             // break;
-//         case 1:
-//             humanChoice = "Paper";
-//             return humanChoice
-//             // break;
-//         case 2:
-//             humanChoice = "Scissors";
-//             return humanChoice
-//             // break;
-//     }
-// } 
+
 
 let humanScore = 0;
 let computerScore = 0;
@@ -89,22 +67,49 @@ while (humanScore < 3 && computerScore <3){
     }
 }
 
+function showScores(){
+    return "human score: " + humanScore + ". computer score:" + computerScore;
+}
+
+
+console.log(playGame())
+console.log(showScores())
+
+
+
+
+// function getHumanChoice(){
+//     let humanChoice = parseInt(prompt("Rock, paper, or scissors? 0=Rock, 1=Paper, 2=Scissors."));
+//     switch (humanChoice){
+//         case 0:
+//             humanChoice = "Rock";
+//             return humanChoice
+//             // break;
+//         case 1:
+//             humanChoice = "Paper";
+//             return humanChoice
+//             // break;
+//         case 2:
+//             humanChoice = "Scissors";
+//             return humanChoice
+//             // break;
+//     }
+// } 
+
+// console.log(getHumanChoice())
+// console.log(getComputerChoice(3))
+
 // // while ((humanScore || computerScore) < 3){
 // //     playRound(computerChoice, humanChoice);
 // }    
     
-function showScores(){
-    return "human score: " + humanScore + ". computer score:" + computerScore;
-}
+// console.log(playRound(computerChoice, humanChoice))
 
 // const humanThrow = getHumanChoice();
 // const computerThrow = getComputerChoice();
 
 
-
-// console.log(getHumanChoice())
-// console.log(getComputerChoice(3))
-
-// console.log(playRound(computerChoice, humanChoice))
-console.log(playGame())
-console.log(showScores())
+// // while ((humanScore || computerScore) < 3){
+// //     playRound(computerChoice, humanChoice);
+// }    
+    
