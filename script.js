@@ -1,4 +1,4 @@
-function playGame(){
+
     function getComputerChoice(max){
 
     let computerChoice = Math.floor(Math.random() * max);
@@ -65,7 +65,7 @@ while (humanScore < 3 && computerScore <3){
     else if (computerScore === 3) {
         return "Too bad, computer wins best out of 5!"
     }
-}
+
 
 function showScores(){
     return "human score: " + humanScore + ". computer score:" + computerScore;
