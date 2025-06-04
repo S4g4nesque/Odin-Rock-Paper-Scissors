@@ -64,13 +64,13 @@ function playRound(computerChoice, humanChoice){
 function playGame(){
 
     while (computerScore < 3 && humanScore < 3){
-        
-        let humanChoice = getHumanChoice();
-        let computerChoice = getComputerChoice();
 
-        playRound();
-        alert("One more round!");
-        console.log(playRound(computerChoice, humanChoice))
+        let humanChoice = getHumanChoice();
+        let computerChoice = getComputerChoice(3);
+
+        let result = playRound(computerChoice, humanChoice);
+        console.log(result);
+        alert(result);
     }
 
     if (computerScore === 3){
@@ -99,9 +99,9 @@ function showScores(){
 }
 
 
-console.log(playGame())
+console.log(playGame());
 // console.log(playRound(computerChoice, humanChoice))
-console.log(showScores())
+console.log(showScores());
 
 
 
