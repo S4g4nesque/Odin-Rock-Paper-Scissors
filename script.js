@@ -34,31 +34,49 @@ let computerScore = 0;
 
 // Game function
 
-function playRound(computerChoice, humanChoice){
+
+
+
+function playGame(){
+
+    function playRound(computerChoice, humanChoice){
     
-    computerChoice = computerChoice.toLowerCase();
-    humanChoice = humanChoice.toLowerCase();
-
-    // Draw conditions
-    if (humanChoice===computerChoice){
-        return "Draw! Computer also threw " + humanChoice + ". Play again!";    
-    }
-    // player loss conditions
-    else if ((humanChoice==="rock" && computerChoice==="paper") || 
-             (humanChoice==="paper" && computerChoice==="scissors") || 
-             (humanChoice==="scissors" && computerChoice==="rock")){
-        computerScore++
-        return "Unlucky, computer threw " + computerChoice + " , try again!";
-    }
-    // player win conditions
-        else if ((humanChoice==="rock" && computerChoice==="scissors") || 
-                 (humanChoice==="paper" && computerChoice==="rock") || 
-                 (humanChoice==="scissors" && computerChoice==="paper")){
-            humanScore++ 
-            return "You win! Computer threw " + computerChoice;
+        computerChoice = computerChoice.toLowerCase();
+        humanChoice = humanChoice.toLowerCase();
+    
+        // Draw conditions
+        if (humanChoice===computerChoice){
+            return "Draw! Computer also threw " + humanChoice + ". Play again!";    
         }
-    }    
+        // player loss conditions
+        else if ((humanChoice==="rock" && computerChoice==="paper") || 
+                 (humanChoice==="paper" && computerChoice==="scissors") || 
+                 (humanChoice==="scissors" && computerChoice==="rock")){
+            computerScore++
+            return "Unlucky, computer threw " + computerChoice + " , try again!";
+        }
+        // player win conditions
+            else if ((humanChoice==="rock" && computerChoice==="scissors") || 
+                     (humanChoice==="paper" && computerChoice==="rock") || 
+                     (humanChoice==="scissors" && computerChoice==="paper")){
+                humanScore++ 
+                return "You win! Computer threw " + computerChoice;
+            }
+        }    
+        
+    while (computerScore && humanScore <= 0){
+        alert("One more round!");
+        console.log(playRound(computerChoice, humanChoice))
+    }
 
+    if (computerScore === 3){
+        return "Game over, computer won best out of 5!"
+    }
+    else (humanScore === 3){
+        return "Game over, you win best out of 5!"
+    }
+
+}
 
 
 // function playGame(){
