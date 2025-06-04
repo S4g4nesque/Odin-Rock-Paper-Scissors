@@ -63,11 +63,11 @@ function playRound(computerChoice, humanChoice){
 
 function playGame(){
 
-
-    
-
-
     while (computerScore < 3 && humanScore < 3){
+        
+        let humanChoice = getHumanChoice();
+        let computerChoice = getComputerChoice();
+
         playRound();
         alert("One more round!");
         console.log(playRound(computerChoice, humanChoice))
