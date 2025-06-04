@@ -63,7 +63,7 @@ function playGame(){
                 return "You win! Computer threw " + computerChoice;
             }
         }    
-        
+
     while (computerScore && humanScore <= 0){
         alert("One more round!");
         console.log(playRound(computerChoice, humanChoice))
@@ -95,8 +95,8 @@ function showScores(){
 }
 
 
-// console.log(playGame())
-console.log(playRound(computerChoice, humanChoice))
+console.log(playGame())
+// console.log(playRound(computerChoice, humanChoice))
 console.log(showScores())
 
 
