@@ -72,7 +72,7 @@ function playGame(){
     if (computerScore === 3){
         return "Game over, computer won best out of 5!"
     }
-    else (humanScore === 3){
+    else if (humanScore === 3){
         return "Game over, you win best out of 5!"
     }
 
