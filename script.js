@@ -61,23 +61,24 @@ function playRound(computerChoice, humanChoice){
 
 
 
-function playGame(){
+// function playGame(){
 
 
 
 
-    if (playRound() === "Draw! Computer also threw " + humanChoice + ". Play again!" ||
-        playRound() === "Unlucky, computer threw " + computerChoice + " , try again!"||
-        playRound() === "You win! Computer threw " + computerChoice)
-        return getComputerChoice(), getHumanChoice(), playRound(computerChoice, humanChoice)
-}    
+//     if (playRound() === "Draw! Computer also threw " + humanChoice + ". Play again!" ||
+//         playRound() === "Unlucky, computer threw " + computerChoice + " , try again!"||
+//         playRound() === "You win! Computer threw " + computerChoice)
+//         return getComputerChoice(), getHumanChoice(), playRound(computerChoice, humanChoice)
+// }    
 
 function showScores(){
     return "human score: " + humanScore + ". computer score:" + computerScore;
 }
 
 
-console.log(playGame())
+// console.log(playGame())
+console.log(playRound(computerChoice, humanChoice))
 console.log(showScores())
 
 
