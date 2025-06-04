@@ -29,6 +29,9 @@ function getHumanChoice(){
 let humanChoice = getHumanChoice();
 let computerChoice = getComputerChoice(3);
 
+let humanScore = 0;
+let computerScore = 0;
+
 // Game function
 
 function playRound(computerChoice, humanChoice){
@@ -56,8 +59,7 @@ function playRound(computerChoice, humanChoice){
         }
     }    
 
-    let humanScore = 0;
-    let computerScore = 0;
+
 
 function playGame(){
 
