@@ -61,11 +61,11 @@ function playGame(){
     let humanScore = 0;
     let computerScore = 0;
 
-    
 
-    if (playRound() = "Draw! Computer also threw " + humanChoice + ". Play again!" ||
-        playRound() = "Unlucky, computer threw " + computerChoice + " , try again!"||
-        playRound() = "You win! Computer threw " + computerChoice)
+
+    if (playRound() === "Draw! Computer also threw " + humanChoice + ". Play again!" ||
+        playRound() === "Unlucky, computer threw " + computerChoice + " , try again!"||
+        playRound() === "You win! Computer threw " + computerChoice)
         return getComputerChoice(), getHumanChoice(), playRound(computerChoice, humanChoice)
 }    
 
@@ -79,6 +79,7 @@ console.log(showScores())
 
 
 
+// OLD CODE
 
 // function getHumanChoice(){
 //     let humanChoice = parseInt(prompt("Rock, paper, or scissors? 0=Rock, 1=Paper, 2=Scissors."));
