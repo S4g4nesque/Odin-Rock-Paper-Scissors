@@ -26,8 +26,8 @@ function getHumanChoice(){
 } 
 
 
-let humanChoice = getHumanChoice();
-let computerChoice = getComputerChoice(3);
+// let humanChoice = getHumanChoice();
+// let computerChoice = getComputerChoice(3);
 
 let humanScore = 0;
 let computerScore = 0;
