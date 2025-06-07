@@ -19,6 +19,7 @@ function getComputerChoice(max){
     }
 
     }
+    
 
 function getHumanChoice(){
     let humanChoice = prompt("Rock, paper, or scissors?");
@@ -26,16 +27,11 @@ function getHumanChoice(){
 } 
 
 
-// let humanChoice = getHumanChoice();
-// let computerChoice = getComputerChoice(3);
-
 let humanScore = 0;
 let computerScore = 0;
 
+
 // Game function
-
-
-
 
 function playGame(){
 
@@ -80,22 +76,8 @@ function playGame(){
     else if (humanScore === 3){
         return alert("Game over, you win best out of 5!");
     }
-
-
-   
+  
 }
-
-
-// function playGame(){
-
-
-
-
-//     if (playRound() === "Draw! Computer also threw " + humanChoice + ". Play again!" ||
-//         playRound() === "Unlucky, computer threw " + computerChoice + " , try again!"||
-//         playRound() === "You win! Computer threw " + computerChoice)
-//         return getComputerChoice(), getHumanChoice(), playRound(computerChoice, humanChoice)
-// }    
 
 
 function showScores(){
@@ -106,45 +88,3 @@ function showScores(){
 console.log(playGame());
 console.log(showScores());
 
-// console.log(playRound(computerChoice, humanChoice))
-// console.log(showScores());
-
-
-
-// OLD CODE
-
-// function getHumanChoice(){
-//     let humanChoice = parseInt(prompt("Rock, paper, or scissors? 0=Rock, 1=Paper, 2=Scissors."));
-//     switch (humanChoice){
-//         case 0:
-//             humanChoice = "Rock";
-//             return humanChoice
-//             // break;
-//         case 1:
-//             humanChoice = "Paper";
-//             return humanChoice
-//             // break;
-//         case 2:
-//             humanChoice = "Scissors";
-//             return humanChoice
-//             // break;
-//     }
-// } 
-
-// console.log(getHumanChoice())
-// console.log(getComputerChoice(3))
-
-// // while ((humanScore || computerScore) < 3){
-// //     playRound(computerChoice, humanChoice);
-// }    
-    
-// console.log(playRound(computerChoice, humanChoice))
-
-// const humanThrow = getHumanChoice();
-// const computerThrow = getComputerChoice();
-
-
-// // while ((humanScore || computerScore) < 3){
-// //     playRound(computerChoice, humanChoice);
-// }    
-    
