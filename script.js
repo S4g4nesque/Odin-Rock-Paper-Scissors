@@ -19,7 +19,7 @@ function getComputerChoice(max){
     }
 
     }
-    
+
 
 function getHumanChoice(){
     let humanChoice = prompt("Rock, paper, or scissors?");
